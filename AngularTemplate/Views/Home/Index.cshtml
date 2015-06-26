@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Angular Template for MVC</title>
+</head>
+<body ng-app="app">
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-resource.min.js"></script>
+    <script src="~/Scripts/ng/services.js"></script>
+    <script src="~/Scripts/ng/homeCtrl.js"></script>
+    <script src="~/Scripts/ng/app.js"></script>
+
+
+    <div ng-view>
+
+    </div>
+
+    @Html.Partial("_home")
+
+</body>
+</html>
