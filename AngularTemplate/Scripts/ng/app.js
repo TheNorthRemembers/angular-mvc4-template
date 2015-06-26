@@ -12,7 +12,7 @@
 
         register = function () {
 
-            var app = angular.module('app', ['ctrl', 'ngRoute','ngResource','appService']).
+            var app = angular.module('app', ['ctrl', 'ngRoute','ngResource','appServices','appFilters']).
                 config(['$routeProvider', function ($routeProvider) {
                     $routeProvider
                     .when("/index", {
@@ -25,7 +25,8 @@
                     });
                 }]);
 
-            appServices.initialize();
+            appFilter.initialize();
+            appService.initialize();
          
             appHomeCtrl.initialize();
 

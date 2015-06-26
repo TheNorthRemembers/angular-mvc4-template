@@ -1,4 +1,4 @@
-﻿var appServices = (function ($) {
+﻿var appService = (function ($) {
     "use strict";
     
     var exports = {},
@@ -6,18 +6,15 @@
         sampleURL = "/api/request/",
 
         init = function () {
-            var appService = angular.module('appService', ['ngResource']);
+            var appServices = angular.module('appServices', ['ngResource']);
 
-            appService.factory('$appResource', ['$resource', function ($resource) {
+            appServices.factory('$appResource', ['$resource', function ($resource) {
                 return {
                     sample:$resource(baseUrl + sampleURL),               
                 //for a POST
                     samplePost:$resource(baseUrl+sampleURL,null,{insert:{method:'POST'}})
                 }
-
-
             }]);
-
         };
 
     exports.initialize = init;

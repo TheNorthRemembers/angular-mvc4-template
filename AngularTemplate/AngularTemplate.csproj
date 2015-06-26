@@ -907,6 +907,7 @@
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\ng\app.js" />
+    <Content Include="Scripts\ng\filters.js" />
     <Content Include="Scripts\ng\homeCtrl.js" />
     <Content Include="Scripts\ng\services.js" />
     <Content Include="Scripts\npm.js" />
