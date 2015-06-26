@@ -10,6 +10,9 @@
                 //$appResource.sample.query(function (data) {
 
                 //});
+
+                $scope.message = "Angular JS is fun!";
+
             }]);
         };
 
