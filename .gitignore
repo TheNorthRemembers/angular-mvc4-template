@@ -4,3 +4,4 @@ AngularTemplate/bin/
 .nuget/
 AngularTemplate.v12.suo
 AngularTemplate/AngularTemplate.csproj.user
+AngularTemplate/node_modules/
