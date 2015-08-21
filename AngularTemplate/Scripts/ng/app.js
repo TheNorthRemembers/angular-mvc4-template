@@ -27,8 +27,8 @@
 
             appFilter.initialize();
             appService.initialize();
-         
-            appHomeCtrl.initialize();
+            var mod = angular.module('ctrl', []);
+            appHomeCtrl.initialize(mod);
 
         };
 
